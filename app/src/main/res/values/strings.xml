@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Focus Bell</string>
+    <string name="a_timer_will_keep_time_as_bells_remind_you_to_stay_present">A Timer will keep time as bells remind you to stay present</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="stop">Stop</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string-array name="TimeDurationArr">
+        <item>Choose Time</item>
+        <item>1min</item>
+        <item>2min</item>
+        <item>5min</item>
+        <item>10min</item>
+        <item>15min</item>
+        <item>20min</item>
+        <item>25min</item>
+        <item>30min</item>
+        <item>35min</item>
+        <item>40min</item>
+        <item>45min</item>
+        <item>50min</item>
+        <item>60min</item>
+
+    </string-array>
+</resources>

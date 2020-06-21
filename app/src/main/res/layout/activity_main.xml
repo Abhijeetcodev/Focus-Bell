@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/InformationoAboutTask"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/a_timer_will_keep_time_as_bells_remind_you_to_stay_present"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp" />
+
+    <Spinner
+        android:id="@+id/TimeDurationType"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/TimeDurationArr"
+        android:outlineAmbientShadowColor="@android:color/primary_text_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214"
+        tools:targetApi="p" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button1"
+        android:onClick="onClickStart"
+        android:text="@string/start"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="300dp"
+        />
+
+    <Button
+        android:id="@+id/StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button1"
+        android:onClick="onClickStop"
+        android:text="@string/stop"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="475dp"
+        android:layout_marginTop="380dp"/>
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/round_button1"
+        android:onClick="onClickReset"
+        android:text="@string/reset"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="460dp"/>
+
+    <TextView
+        android:id="@+id/CurrentTimeShower"
+        android:layout_width="164dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="180dp"
+        android:shadowColor="#250404"
+        android:text="@string/textview"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="125dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="65dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/timer2" />
+
+
+
+</RelativeLayout>
